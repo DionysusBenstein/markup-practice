@@ -10,6 +10,7 @@ body {
 
 .container {
     max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -149,7 +150,8 @@ body {
 }
 
 .about__body {
-    width: 820px;
+    max-width: 820px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -304,7 +306,8 @@ body {
 /* Contact */
 
 .contact__body {
-    width: 1100px;
+    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 100px;
 }
@@ -391,7 +394,7 @@ body {
 }
 
 .contact__info {
-    padding-right: 150px;
+    flex: 0 1 30%;
 }
 
 .contact__text {
@@ -466,4 +469,116 @@ body {
     line-height: 1.2;
     font-weight: 400;
     color: #6c6c6c;
+}
+
+/* Responsibility */
+
+@media (max-width: 1024px) { 
+    .container,
+    .about__columns,
+    .partners__row {
+        padding: 0 40px;
+    }
+
+    .item-about__title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) { 
+    .main-title__subtitle {
+        margin-top: 20px;
+    }
+
+    .main-title__subtitle::before {        
+        top: 200px;
+    }
+
+    .about__title {
+        margin: 90px 0 37px 0;
+    }
+
+    .item-about__title {
+        font-size: 17px;
+    }
+
+    .contact__title {
+        margin-top: 140px;
+    }
+
+    .contact__row {
+        flex-direction: column;
+    }
+
+    .contact__controls {
+        margin: 0;
+    }
+
+    .input-item {
+        margin-bottom: 50px;
+    }
+
+    .input-item + .input-item {
+        margin-left: 0;
+    }
+
+    .contact__row + .text-label {
+        margin: 0 0 19px 0;
+    }
+
+    .contact__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 75px;
+    }
+
+    .contact__text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .about__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__column {
+        flex: 0 1 75%;
+    }
+
+    .about__column + .about__column{
+        margin-top: 70px;
+    }
+
+    .portfolio__item {
+        flex: 0 1 100%;
+    }
+
+    .portfolio__grid {
+        margin-top: 80px;
+    }
+
+    .portfolio__item:nth-child(even) {
+        margin-left: 0;
+    }
+    
+    .contact__body {
+        padding: 0 70px;
+    }
+}
+
+@media (max-width: 360px) { 
+    .menu__item + .menu__item {
+        margin-left: 10px;
+    }
+
+    .about__text {
+        padding: 0;
+    }
+
+    .about__column {
+        flex: 0 1 100%;
+    }
 }
