@@ -539,6 +539,14 @@ body {
 }
 
 @media (max-width: 576px) {
+    .main-title__subtitle::before {        
+        top: 260px;
+    }
+
+    .menu__item + .menu__item {
+        margin-left: 10px;
+    }
+
     .about__row {
         flex-direction: column;
         align-items: center;
@@ -546,6 +554,10 @@ body {
 
     .about__column {
         flex: 0 1 75%;
+    }
+
+    .about__text {
+        padding: 0;
     }
 
     .about__column + .about__column{
@@ -565,20 +577,20 @@ body {
     }
     
     .contact__body {
-        padding: 0 70px;
+        padding: 0 40px;
+    }
+
+    .contact__title {
+        margin: 100px 0;
     }
 }
 
 @media (max-width: 360px) { 
-    .menu__item + .menu__item {
-        margin-left: 10px;
-    }
-
-    .about__text {
-        padding: 0;
-    }
-
     .about__column {
         flex: 0 1 100%;
+    }
+
+    .partners__row {
+        padding: 0 20px;
     }
 }
