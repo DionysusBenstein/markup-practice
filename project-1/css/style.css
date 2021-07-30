@@ -71,7 +71,8 @@ body {
 .intro {
     height: 100vh;
     color: #fff;
-    background: url("../img/intro-bg.png") center;
+    background: url("../img/intro-bg.png") center no-repeat;
+    background-size: cover;
 }
 
 .intro__row {
@@ -82,7 +83,7 @@ body {
     align-items: center;
 }
 
-.logo {
+.intro__logo {
     width: 195px;
 }
 
@@ -229,7 +230,12 @@ body {
 /* Portfolio */
 
 .portfolio {
+    padding-bottom: 64px;
     background: #f3f3f3;
+}
+
+.portfolio__grid {
+    margin-top: 136px;
 }
 
 .portfolio__title {
@@ -239,13 +245,225 @@ body {
 
 .portfolio__row {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 -10px;
 }
 
 .portfolio__item {
-    flex: 0 0 540px;
+    flex: 0 1 calc(50% - 15px);
     height: 365px;
-    margin: 0 10px 0 0;
     background: #eaeaea;
+}
+
+.portfolio__item:nth-child(even) {
+    margin-left: 30px;
+}
+
+.portfolio__item:nth-child(n + 1) {
+    margin-top: 16px;
+}
+
+.portfolio__btn {
+    margin: 64px auto 0 auto;
+    border: 1px solid #000;
+}
+
+.portfolio__btn:hover {
+    background: #000;
+    color: #f3f3f3;
+}
+
+/* Partners */
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 390px;
+    background: url("../img/partners-bg.png") bottom no-repeat;
+    background-size: cover;
+}
+
+.partners__title {
+    margin: 100px 0 0 0;
+    font-size: 30.4px;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+}
+
+.partners__row {
+    margin: 100px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 550px;
+    width: 100%;
+}
+
+/* Contact */
+
+.contact__body {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.contact__title {
+    position: relative;
+    margin: 185px 0 120px 0;
+    padding-bottom: 35px;
+}
+
+.contact__title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 50%;
+    bottom: 0;
+    width: 80px;
+    height: 1px;
+    background: #000;
+    transform: translateX(-50%);
+}
+
+.contact__row {
+    display: flex;
+}
+
+.contact__controls {
+    margin-right: 80px;
+}
+
+.contact__controls, .contact__info { 
+    flex: 0 1 50%;
+}
+
+.input-item {
+    flex: 1 1 auto;
+}
+
+.input-item + .input-item {
+    margin-left: 60px;
+}
+.contact__row + .text-label {
+    margin: 75px 0 19px 0;
+}
+
+.text-label {
+    display: block;
+    margin: 0 0 19px 0;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.text-input, .user-message {
+    width: 100%;
+    padding: 8px;
+    background: #f8f7f7;
+    border: none;
+    border-top: 1px solid #000;
+    outline: none;
+}
+
+.user-message {
+    width: 100%;
+}
+
+.submit-btn {
+    display: block;
+    margin: 42px 0 0 100%;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background: transparent;
+    border: none;
+    outline: none;
+    transform: translateX(-100%);
+    cursor: pointer;
+}
+
+.contact__info {
+    padding-right: 150px;
+}
+
+.contact__text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000
+}
+
+.contact__subtitle {
+    margin-top: 35px;
+}
+
+.icons-contact {
+    display: flex;
+}
+
+.icons-contact__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 29px;
+    height: 29px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.icons-contact__link + .icons-contact__link {
+    margin-left: 12px;
+}
+
+/* Footer */
+
+.footer {
+    height: 274px;
+    margin-top: 100px;
+    background: #3c3c3c;
+}
+
+.footer__body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__logo {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.footer__logo img {
+    width: 122px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #a4a4a4;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__link + .footer__link {
+    margin-left: 23px;
+}
+
+.copyright-text {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #6c6c6c;
 }

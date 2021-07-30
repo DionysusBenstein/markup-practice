@@ -14,8 +14,8 @@
   <main class="main-wrapper">
     <section class="intro">
       <div class="intro__row">
-        <div class="logo">
-          <img class="logo__img" src="img/logo.png" alt="" >
+        <div class="intro__logo">
+          <img src="img/logo.png" alt="" >
         </div>
         <div class="main-title">
           <h1 class="main-title__title">Clear, smart, attractive design</h1>
@@ -95,11 +95,87 @@
           </div>
         </div>
       </div>
-      <a class="portfolio__btn btn">Read more</a>
+      <div class="container">
+        <a class="portfolio__btn btn">Read more</a>
+      </div>
     </section>
-    <section class="partners">partners</section>
-    <section class="contact">contact</section>
-    <footer class="footer">footer</footer>
+    <section class="partners">
+      <h3 class="partners__title">Our partners</h3>
+      <div class="partners__row">
+        <div class="partners__item">
+          <img src="img/partners_item_1.png" alt="">
+        </div>
+        <div class="partners__item">
+          <img src="img/partners_item_2.png" alt="">
+        </div>
+        <div class="partners__item">
+          <img src="img/partners_item_3.png" alt="">
+        </div>
+        <div class="partners__item">
+          <img src="img/partners_item_4.png" alt="">
+        </div>        
+      </div>
+    </section>
+    <section class="contact">      
+      <h3 class="contact__title title">Contact</h3>
+      <div class="contact__body">
+        <div class="contact__row">
+          <div class="contact__controls">
+            <form class="contact__form" action="/">
+              <div class="contact__row">
+                <div class="input-item">
+                  <label class="text-label" for="username">Your name</label>
+                  <input class="text-input" type="text" id="username">
+                </div>                
+                <div class="input-item">
+                  <label class="text-label" for="useremail">Your e-mail</label>
+                  <input class="text-input" type="text" id="useremail">
+                </div>
+              </div>
+              <label class="text-label" for="user-message">Message</label>
+              <textarea class="user-message" name="" id="user-message" cols="30" rows="6"></textarea>
+              <button class="submit-btn" type="submit">Send</button>
+            </form>
+          </div>
+          <div class="contact__info">
+            <p class="contact__text">
+              Have an idea for a project? Just looking to explore and see the possibilities? <br> I'm here to help.</p>
+            <p class="contact__subtitle"><b>Postma Elena</b></p>
+            <div class="icons-contact">
+              <a class="icons-contact__link" href="#">
+                <div class="icons-contact__item">
+                  <img src="img/contact_fb.png" alt="">
+                </div>
+              </a>
+              <a class="icons-contact__link" href="#">
+                <div class="icons-contact__item">
+                  <img src="img/contact_ln.png" alt="">
+                </div>
+              </a>
+            </div>
+            <p class="contact__email">
+              e-mail: <b>postma.elena@gmail.com</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__body">        
+        <div class="footer__logo">
+          <img src="img/logo.png" alt="" >
+        </div>
+        <div class="footer__links">
+          <a href="" class="footer__link">Home</a>
+          <a href="" class="footer__link">Facebook</a>
+          <a href="" class="footer__link">Linkedin</a>
+          <a href="" class="footer__link">Contact</a>
+        </div>
+        <div class="copyright-text">
+          &copy; 2021 All Rights Reserved
+        </div>
+      </div>
+    </footer>
   </main>
 </body>
 </html>
