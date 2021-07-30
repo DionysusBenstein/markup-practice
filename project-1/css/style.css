@@ -1,0 +1,251 @@
+@import "normalize.css";
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    width: 182px;
+    height: 47px;
+    line-height: 43px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px #fff solid;
+    cursor: pointer;
+    user-select: none;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #3c3c3c;
+    border: 1px #fff solid;
+    letter-spacing: 0.1em;
+}
+
+.title {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    text-align: center;
+    color: #000000;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu__item {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3c3c3c;
+    transition: .1s ease-in-out;
+}
+
+.menu__item + .menu__item {
+    margin-left: 50px;
+}
+
+.menu__item:hover {
+    color: #ada074;
+}
+
+/* Intro */
+
+.intro {
+    height: 100vh;
+    color: #fff;
+    background: url("../img/intro-bg.png") center;
+}
+
+.intro__row {
+    height: 100%;
+    padding: 100px 0 125px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 195px;
+}
+
+.main-title {
+    position: relative;
+    margin-top: 60px;
+    line-height: 40px;
+    letter-spacing: 0.25em;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+.main-title__title {
+    margin: 0;
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-title__subtitle {
+    margin: 0;
+    font-size: 26px;
+    font-weight: lighter;
+}
+
+.main-title__subtitle::before {
+    content: "";
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    display: block;
+    width: 105px;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.intro__btn {
+    position: relative;
+}
+
+.intro__btn::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    display: block;
+    width: 17px;
+    height: 10px;
+    background: url("../img/arrow-down.png");
+    transform: translateX(-50%);
+}
+
+/* About */
+
+.about__menu {
+    height: 58px;
+    padding: 22px 0;    
+}
+
+.about__columns {
+    margin: 70px 0 95px 0;
+}
+
+.about__body {
+    width: 820px;
+    margin: 0 auto;
+}
+
+.about__title {
+    position: relative;
+    margin: 130px 0 37px 0;
+    padding-bottom: 35px;
+}
+
+.about__title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 50%;
+    bottom: 0;
+    width: 80px;
+    height: 1px;
+    background: #000;
+    transform: translateX(-50%);
+}
+
+.about__text {
+    padding: 0 65px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    text-align: center;
+    color: #868585;
+}
+
+.about__row {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.about__column {
+    flex: 0 0 33.333%;
+    padding: 0 15px;
+}
+
+.item-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-about__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 92px;
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+}
+
+.about__column:last-child img {
+    margin-left: 10px;
+}
+
+.item-about__title {
+    margin: 41px 0 36px 0;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.item-about__text {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+    text-align: center;
+    color: #868585;
+}
+
+/* Portfolio */
+
+.portfolio {
+    background: #f3f3f3;
+}
+
+.portfolio__title {
+    margin: 0;
+    padding: 100px 0 91px 0;
+}
+
+.portfolio__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.portfolio__item {
+    flex: 0 0 540px;
+    height: 365px;
+    margin: 0 10px 0 0;
+    background: #eaeaea;
+}
