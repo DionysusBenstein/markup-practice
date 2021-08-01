@@ -674,6 +674,10 @@ body {
         padding-right: 20px;
     }
 
+    .partners__item:nth-last-child(odd) {
+        display: none;
+    }
+
     .menu__list {
         justify-content: space-between;
     }
