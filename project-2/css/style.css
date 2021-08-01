@@ -407,7 +407,6 @@ body {
     height: 100%;
     margin: 0;
     object-fit: cover;
-    object-position: center;
 }
 
 .gallery__item:first-child {
