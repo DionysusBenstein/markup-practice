@@ -565,13 +565,27 @@ body {
 .subscribe {
     margin: 111px 0 96px 0;
     padding: 0 0 70px 0;
+    background: url("../img/subscribe-decore-3.svg") 100% 100% no-repeat;
 }
 
 .subscribe__inner {
+    position: relative;
     padding: 79px 155px;
-    background: #dfd7f9;
+    background: url("../img/subscribe-decore-1.svg") -87px bottom no-repeat, 
+              #DFD7F9 url("../img/subscribe-decore-2.svg") top right no-repeat;
     border-radius: 20px;
     border-top-left-radius: 129px;
+}
+
+.subscribe__inner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 71px;
+    height: 71px;
+    background: url("../img/paper-plane.svg") no-repeat center;
+    transform: translate(25%, -25%);
 }
 
 .subscribe__text {
@@ -589,24 +603,111 @@ body {
 }
 
 .subscribe__text-input {
-    position: relative;
+    max-width: 420px;
+    width: 100%;
     padding: 25px 0 25px 66px;
     outline: none;
     border: none;
+    border-radius: 10px;
 }
 
 .subscribe__text-input::placeholder {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #39425D;
+    color: #39425d;
 }
 
-.subscribe__text-input::after {
-    content: "awd";
+.input-container {
+    position: relative;
+    display: inline;
+}
+
+.input-container::before {
+    content: "";
     position: absolute;
+    top: 50%;
+    left: 31px;
     display: block;
     width: 22px;
     height: 19px;
     background: url("../img/mail-icon.svg") no-repeat center;
+    transform: translateY(-50%);
+}
+
+.subscribe__submit {
+    margin-left: 24px;
+    padding: 25px 51px;
+    color: #fff;
+    background: linear-gradient(#FF946D, #FF7D68);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__column:first-child,
+.footer__column:last-child {
+    flex: 0 0 220px;
+}
+
+.footer__text {
+    margin: 19px 0 0 0  ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16.19px;
+    color: #5E6282;
+}
+
+.footer__link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #5E6282;
+}
+
+.social-media {
+    display: flex;
+}
+
+.footer__link {
+    display: block;
+    margin-top: 26px;
+    cursor: pointer;
+}
+
+.footer__link + .footer__link {
+    margin-top: 14px;
+}
+
+.download {
+    display: flex;
+    margin-top: 16px;
+}
+
+.download__appstore  {
+    margin-left: 7px;
+}
+
+.footer__headline {
+    margin: 0 0 20px 0;
+    font-size: 21px;
+    font-weight: 700;
+    color: #080809;
+}
+
+.footer__bottom {
+    margin: 84px auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #5E6282;
 }
